@@ -1,4 +1,4 @@
 fun
 ===
 
-Experimental Algorithms
+Fun Problems and Experimental Algorithms
