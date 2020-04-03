@@ -11,8 +11,6 @@ Given 2, we can generate:
 
 ## Usage
 
-./a.out n
+./a.out
 
-_n_ number of pair of parentheses. Minimum 1, Maximum 8.
-
-This program prints out each valid string with the given number of pairs of parentheses while printing a running count.
+This program prints out each valid string for 1 to 8 pairs of parentheses while printing a running count.
