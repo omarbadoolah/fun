@@ -96,11 +96,7 @@ func Find(start, end string) ([]string, error) {
 		current := nodes[0]
 		explored[current.Word] = true
 		for _, neighbor := range findNeighbors(current.Word, wordHash) {
-			newPath := make([]string, len(current.Path)+1)
-			for i := range current.Path {
-				newPath[i] = current.Path[i]
-			}
-			newPath[len(current.Path)] = neighbor
+			newPath := append(append([]string(nil), current.Path...), neighbor)
 			if neighbor == end {
 				return newPath, nil
 			}
